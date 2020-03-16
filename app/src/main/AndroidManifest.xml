@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Motion_06"></activity>
+        <activity android:name=".Motion_12"></activity>
+        <activity android:name=".Motion_11" />
+        <activity android:name=".Motion_10" />
+        <activity android:name=".Motion_09" />
+        <activity android:name=".Motion_08" />
+        <activity android:name=".Motion_07" />
+        <activity android:name=".Motion_06" />
         <activity android:name=".Motion_05" />
         <activity android:name=".Motion_04" />
         <activity android:name=".Motion_03" />

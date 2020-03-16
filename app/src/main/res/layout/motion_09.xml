@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/motion_layout_05"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/scene_05"
-    app:showPaths="true"
-    tools:context=".Motion_05">
+    motion:layoutDescription="@xml/scene_09"
+    motion:motionDebug="SHOW_ALL"
+    tools:context=".Motion_09">
 
     <TextView
-        android:id="@+id/e"
+        android:id="@+id/j"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="KeyFrameSet: (many KeyPosition);"
+        android:text="KeyPosition, Motion: (pathMotionArc);"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_05"
+    <View
+        android:id="@+id/view_09"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@color/colorAccent" />

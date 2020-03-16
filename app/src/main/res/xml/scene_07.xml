@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="2000"
+        motion:autoTransition="jumpToStart">
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@+id/btn_1" />
+
+        <KeyFrameSet>
+            <KeyCycle
+                android:translationX="10dp"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/edit_2"
+                motion:wavePeriod="5"
+                motion:waveShape="sin" />
+
+            <KeyPosition
+                motion:framePosition="10"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/btn_1"
+                motion:percentY="0.5" />
+            <KeyPosition
+                motion:framePosition="20"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/btn_1"
+                motion:percentY="0.56" />
+            <KeyPosition
+                motion:framePosition="35"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/btn_1"
+                motion:percentY="0.45" />
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/btn_1"
+                motion:percentY="0.56" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/btn_1"
+                motion:percentY="0.4" />
+
+            <KeyAttribute
+                android:scaleX="0.9"
+                android:scaleY="1.2"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/btn_1" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="20"
+                motion:motionTarget="@+id/btn_1" />
+            <KeyAttribute
+                android:scaleX="0.85"
+                android:scaleY="1.25"
+                motion:framePosition="35"
+                motion:motionTarget="@+id/btn_1" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/btn_1" />
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="1.30"
+                motion:framePosition="75"
+                motion:motionTarget="@+id/btn_1" />
+
+        </KeyFrameSet>
+    </Transition>
+</MotionScene>
