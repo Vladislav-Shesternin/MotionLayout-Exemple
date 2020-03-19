@@ -3,14 +3,22 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    motion:layoutDescription="@xml/scene_11"
+    motion:layoutDescription="@xml/scene_14"
     motion:motionDebug="SHOW_ALL">
+
+
+    <FrameLayout
+        android:id="@+id/bottomCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent" />
 
     <FrameLayout
         android:id="@+id/topCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/colorRed_08" />
+        android:background="@color/colorAccent" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gidlnV_1"
@@ -32,5 +40,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         motion:layout_constraintGuide_percent="0.05" />
+
+    <ImageView
+        android:id="@+id/imgBadoo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        motion:srcCompat="@drawable/ic_action_name" />
+
+    <ImageView
+        android:id="@+id/imgNo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        motion:srcCompat="@drawable/ic_action_name2" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

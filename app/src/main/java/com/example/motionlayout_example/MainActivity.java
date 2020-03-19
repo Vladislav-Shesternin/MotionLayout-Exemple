@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mBtn1, mBtn2, mBtn3,
             mBtn4, mBtn5, mBtn6,
             mBtn7, mBtn8, mBtn9,
-            mBtn10, mBtn11, mBtn12;
+            mBtn10, mBtn11, mBtn12,
+            mBtn13, mBtn14, mBtn15;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtn10 = findViewById(R.id.btn_10);
         mBtn11 = findViewById(R.id.btn_11);
         mBtn12 = findViewById(R.id.btn_12);
+        mBtn13 = findViewById(R.id.btn_13);
+        mBtn14 = findViewById(R.id.btn_14);
+        mBtn15 = findViewById(R.id.btn_15);
 
         mBtn1.setOnClickListener(this);
         mBtn2.setOnClickListener(this);
@@ -43,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtn10.setOnClickListener(this);
         mBtn11.setOnClickListener(this);
         mBtn12.setOnClickListener(this);
+        mBtn13.setOnClickListener(this);
+        mBtn14.setOnClickListener(this);
+        mBtn15.setOnClickListener(this);
     }
 
     @Override
@@ -84,6 +91,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_12:
                 intent = new Intent(this, Motion_12.class);
+                break;
+            case R.id.btn_13:
+                intent = new Intent(this, Motion_13.class);
+                break;
+            case R.id.btn_14:
+                intent = new Intent(this, Motion_14.class);
+                break;
+            case R.id.btn_15:
+                intent = new Intent(this, Motion_15.class);
                 break;
         }
         startActivity(intent);

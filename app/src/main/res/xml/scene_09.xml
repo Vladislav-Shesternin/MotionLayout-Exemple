@@ -10,13 +10,12 @@
         <OnClick
             motion:clickAction="toggle"
             motion:targetId="@+id/view_09" />
-        
+
         <KeyFrameSet>
             <KeyPosition
-                motion:motionTarget="@+id/view_09"
                 motion:framePosition="50"
-                motion:pathMotionArc="none"
-                />
+                motion:motionTarget="@+id/view_09"
+                motion:pathMotionArc="none" />
         </KeyFrameSet>
     </Transition>
 
@@ -29,7 +28,7 @@
                 android:layout_marginBottom="50dp"
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintStart_toStartOf="parent" />
-            <Motion motion:pathMotionArc="startVertical"/>
+            <Motion motion:pathMotionArc="startVertical" />
         </Constraint>
     </ConstraintSet>
 

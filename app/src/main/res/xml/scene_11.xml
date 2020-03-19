@@ -1,4 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene xmlns:android="http://schemas.android.com/apk/res/android">
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetEnd="@+id/like"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="300">
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:onTouchUp="autoComplete"
+            motion:touchAnchorId="@id/topCard"
+            motion:touchAnchorSide="bottom"
+            motion:touchRegionId="@id/topCard" />
+    </Transition>
 
+    <Transition
+        motion:constraintSetEnd="@id/pass"
+        motion:constraintSetStart="@id/start"
+        motion:duration="300">
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:onTouchUp="autoComplete"
+            motion:touchAnchorId="@+id/topCard"
+            motion:touchAnchorSide="bottom"
+            motion:touchRegionId="@+id/topCard" />
+    </Transition>
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@id/offScreenLike"
+        motion:constraintSetStart="@+id/like"
+        motion:duration="500" />
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@id/offScreenPass"
+        motion:constraintSetStart="@+id/pass"
+        motion:duration="500" />
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/topCard">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintHeight_percent="0.8"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintWidth_percent="0.8" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/like">
+        <Constraint android:id="@+id/topCard">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintHeight_percent="0.8"
+                motion:layout_constraintStart_toStartOf="@+id/gidlnV_2"
+                motion:layout_constraintTop_toBottomOf="@+id/gidlnH_1"
+                motion:layout_constraintWidth_percent="0.8" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/pass">
+        <Constraint android:id="@id/topCard">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintEnd_toEndOf="@+id/gidlnV_1"
+                motion:layout_constraintHeight_percent="0.8"
+                motion:layout_constraintTop_toBottomOf="@+id/gidlnH_1"
+                motion:layout_constraintWidth_percent="0.8" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/offScreenLike">
+        <Constraint android:id="@id/topCard">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintHeight_percent="0.8"
+                motion:layout_constraintTop_toBottomOf="@+id/gidlnH_1" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/offScreenPass">
+        <Constraint android:id="@id/topCard">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                motion:layout_constraintHeight_percent="0.8"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/gidlnH_1" />
+        </Constraint>
+    </ConstraintSet>
 </MotionScene>

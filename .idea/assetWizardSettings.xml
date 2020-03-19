@@ -38,7 +38,7 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="opacityPercent" value="80" />
-                                                <entry key="paddingPercent" value="-10" />
+                                                <entry key="paddingPercent" value="5" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -62,9 +62,11 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="imageAsset" value="$USER_HOME$/Изображения/Android Images/images.jpeg" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Загрузки/C__fakepath_знак-запрета-отсутствие-символа-красный-крест-121365549.png" />
+                                      <entry key="outputName" value="ic_action_name2" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="5aff4b" />
+                                      <entry key="themeColor" value="ff151d" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -120,7 +122,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="paddingPercent" value="-10" />
+                                                <entry key="paddingPercent" value="5" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -147,8 +149,8 @@
                                       <entry key="backgroundColor" value="f6fffa" />
                                       <entry key="cropped" value="true" />
                                       <entry key="iconShape" value="CIRCLE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Изображения/Android Images/images (1).jpeg" />
-                                      <entry key="outputName" value="human" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Загрузки/C__fakepath_512x512bb.png" />
+                                      <entry key="outputName" value="badoo" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -211,7 +213,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
+                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>
